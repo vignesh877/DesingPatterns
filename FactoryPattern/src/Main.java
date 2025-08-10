@@ -1,5 +1,9 @@
+import services.NotifcationServices;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        NotifcationServices notifcationServices = new NotifcationServices();
+        notifcationServices.sendNotification("mail");
+        notifcationServices.sendNotification("text");
     }
 }
