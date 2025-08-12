@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Cart cart = new Cart.CartBuilder()
+                .addItem("Mouse" , 100 , 2)
+                .addItem("TV" , 155000 , 1)
+                .build();
+
+        System.out.println(cart);
+
     }
 }
